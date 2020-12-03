@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  </head>
+  <body>
+    <section class="main">
+      <header class="header">
+        <a href="#" class="logo"><img src="logo.png" /></a>
+        <ul class="navigation">
+          <li>
+            <a href="#"><span class="active">Men</span></a>
+          </li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Boys</a></li>
+          <li><a href="#">Girls</a></li>
+          <li><a href="#">New Arrivals</a></li>
+        </ul>
+        <ul class="nav">
+          <li><box-icon name="search"></box-icon></li>
+          <li><box-icon name="cart"></box-icon></li>
+          <li><box-icon name="menu"></box-icon></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="text-box">
+          <h1><i>Nike</i></h1>
+          <h4>Just Do It.</h4>
+          <div class="text-box2">
+            <h2>2020</h2>
+            <h3>Air Max</h3>
+            <h3>Dynamic Fit</h3>
+          </div>
+          <h5 style="cursor: pointer">
+            <sup>EN</sup
+            ><box-icon
+              name="chevron-down"
+              type="solid"
+              color="#ffffff"
+            ></box-icon>
+          </h5>
+        </div>
+        <div class="image-box">
+          <img src="PngItem_1149906.png" class="mainimage"/>
+        </div>
+        <div class="price-card">
+        <img src="nike.png">
+        <div class="card">
+          <h1>Air Max</h1>
+          <i><box-icon name='heart' type='solid' color='#f00404' ></box-icon></i>
+          <h3>$200.00</h3><br>
+          <a href="#">Add To cart</a>
+        </div>
+        <ul class="social">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">facebook</a></li>
+        </ul>
+    </div>
+      </div>
+    </section>
+    <script>
+        TweenMax.from('.main',1.6,{
+            width:0,
+            ease:Circ.easeInOut
+        })
+        TweenMax.from('.header',1,{
+            delay:1.5,
+            opacity:0,
+            ease:Circ.easeIn
+        })
+        TweenMax.from('.text-box',1,{
+            delay:2,
+            opacity:0,
+            ease:Circ.easeIn
+        })
+        TweenMax.from('.price-card',1,{
+            delay:2.5,
+            opacity:0,
+            ease:Circ.easeIn
+        })
+        TweenMax.from('.mainimage',3,{
+            delay:3,
+            opacity:0,
+            height:0,
+
+            ease:Elastic.easeInOut
+        })
+        
+   
+        
+        </script>
+  </body>
+</html>
